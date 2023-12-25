@@ -1,0 +1,28 @@
+{% include 'navbar.html' %}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Sign In</h2>
+    {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                
+                        {% for message in messages %}
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            <strong>{{ message }}</strong> 
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                          </div>
+                        {% endfor %}
+                
+            {% endif %}
+        {% endwith %}
+    <form method="post" action="{{ url_for('signin') }}">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+    </form>
+</div>
