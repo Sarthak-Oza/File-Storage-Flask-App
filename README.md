@@ -8,7 +8,11 @@ Welcome to the File Storage Flask App! This project enables users to store, down
 - **User Authentication**: Secure user authentication system allows users to create accounts, log in, and manage their files securely.
 - **Flask Routing**: The project leverages Flask for routing, enabling clean and efficient URL mapping for different functionalities.
 - **SQLite with SQL**: Utilizes SQLite database with SQL queries for efficient storage and management of user accounts and file metadata.
-- **Bootstrap**: Used Bootstrap components for styling the pages. 
+- **Bootstrap**: Used Bootstrap components for styling the pages.
+
+## Demo:
+
+Check out the live demo of the File Storage Flask App [here](https://sarthak1499.pythonanywhere.com/).
 
 ## Screenshots:
 
